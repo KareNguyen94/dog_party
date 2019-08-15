@@ -1,0 +1,118 @@
+body {
+  font-family: 'Open Sans';
+}
+
+.header {
+  background-color: #75e2e6;
+  padding: 0px 0px 0px 0px;
+  display: inline;
+  width: 100%;
+  float: right;
+}
+
+#logo {
+  float: left;
+  padding: 5px 0px 5px 5px;
+  display: inline;
+  height: 40px;
+  width: 40px;
+  z-index: 100%;
+}
+
+.links {
+  padding: 15px 5px 0px 0px;
+  text-align: right;
+  height: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  padding: 8px;
+  color: black;
+  font-size: 12px;
+}
+
+.background {
+  background-image: url("images/park.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("images/park.jpg");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 10px;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+form {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 4px solid #048eaa;
+ }
+
+#somedogs {
+
+}
+
+.name {
+  color: #ffffff;
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+  right: 100px;
+}
+
+.button {
+  font-size: 12px;
+  background-color: #75e2e6;
+  width: 237px;
+  height: 32px;
+  margin: 15px;
+}
+
+.column1of3, .column2of3, .column3of3 {
+  width: 31%;
+  float: left;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+}
+
+.p1, .p2, .p3 {
+  text-align: left;
+}
+
+.img1, .img2, .img3 {
+  border-radius: 100%;
+  border: 4px solid #048eaa;
+  width: 200px;
+  height: 200px;
+}
+
+.button1, .button2, .button3 {
+  font-size: 16px;
+  background-color: #048eaa;
+  width: 237px;
+  height: 32px;
+  margin: 15px;
+}
+
+.section {
+  border: 1px solid black;
+  background-color: #048eaa;
+  color: white;
+  text-align: center;
+}
