@@ -1,13 +1,56 @@
+* {
+  margin: 0px;
+}
+
 body {
   font-family: 'Open Sans';
 }
 
-.header {
+header {
+  border: 1px solid;
+  border-width: 100%;
+}
+
+nav {
+  border: 1px solid;
+  border-width: 100%;
   background-color: #75e2e6;
   padding: 0px 0px 0px 0px;
   display: inline;
   width: 100%;
   float: right;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 10px;
+  font-size: 33px;
+  font-weight: normal;
+  margin-bottom: 25px;
+  border: 0px solid;
+}
+
+main {
+  border: 0px solid;
+  border-width: 100%;
+  background-image: url("images/park.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("images/park.jpg");
+  background-size: cover;
+}
+
+footer {
+  border: 0px solid;
+  border-width: 100%;
+  border: 1px solid black;
+  background-color: #048eaa;
+  color: white;
+  text-align: center;
+  margin-top: 800px;
+  padding: 50px 0px 50px 0px;
 }
 
 #logo {
@@ -29,31 +72,56 @@ body {
   text-decoration: none;
   padding: 8px;
   color: black;
-  font-size: 12px;
+  font-size: 16px;
 }
 
-.background {
-  background-image: url("images/park.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("images/park.jpg");
-  background-size: cover;
+/* IF the screen is atleast 400px this applies  */
+@media only screen and (min-width: 500px) {
+  #formBox {
+    margin-top: 30px;
+    width: 17.3%;
+    padding: 16px 15px 14px 120px;
+    margin-left: 525px;
+    margin-top: 5px;
+  }
 }
 
-h1 {
+/* Will only apply if it is 399px */
+@media only screen and (max-width: 500px) {
+  #formBox {
+    margin-top: 30px;
+    width: 17.3%;
+    padding: 16px 15px 14px 120px;
+    margin-left: 525px;
+    margin-top: 5px;
+  }
+}
+
+#nameButton {
+  font-size: 16px;
+  background-color: #75e2e6;
+  width: 387px;
+  height: 45px;
+  margin: 20px 0px 20px 525px;
+}
+
+.radioButton {
   text-align: center;
   color: white;
-  position: relative;
-  top: 10px;
-  font-size: 23px;
-  margin-bottom: 25px;
 }
 
-form {
-  text-align: center;
+#paragraphBox {
+
 }
 
-.center {
+.name {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 10px 0px 0px 530px;
+  padding-top: 20px;
+}
+
+.rednose {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -64,35 +132,74 @@ form {
  }
 
 #somedogs {
-
+  font-weight: bold;
 }
 
-.name {
-  color: #ffffff;
-  font-size: 12px;
-  position: relative;
-  top: 10px;
-  right: 100px;
+@media only screen and (max-width: 400) {
+  .column1of3 {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+    border: 0px solid;
+  }
 }
 
-.button {
-  font-size: 12px;
-  background-color: #75e2e6;
-  width: 237px;
-  height: 32px;
-  margin: 15px;
+@media only screen and (min-width: 499px) {
+  .column1of3 {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+    border: 0px solid;
+  }
 }
 
-.column1of3, .column2of3, .column3of3 {
-  width: 31%;
-  float: left;
-  text-align: center;
-  margin: 15px;
-  padding: 20px;
+@media only screen and (max-width: 400px) {
+  .column2of3 {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 20px 200px 0px 230px;
+    border: 0px solid;
+  }
 }
 
-.p1, .p2, .p3 {
+@media only screen and (min-width: 399px) {
+  .column2of3 {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 20px 0px 50px 50px;
+    border: 0px solid;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .column3of3 {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 20px 20px 50px 50px;
+    border: 0px solid;
+  }
+}
+
+@media only screen and (min-width: 399px) {
+  .column3of3 {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    border: 0px solid;
+  }
+}
+
+.paragraphText {
   text-align: left;
+  padding: 0px 0px 0px 0px;
+  width: 60%;
+  margin-left: 85px;
 }
 
 .img1, .img2, .img3 {
@@ -100,19 +207,40 @@ form {
   border: 4px solid #048eaa;
   width: 200px;
   height: 200px;
+  margin: 40px;
+
 }
 
-.button1, .button2, .button3 {
+.button1 {
   font-size: 16px;
   background-color: #048eaa;
-  width: 237px;
-  height: 32px;
-  margin: 15px;
+  width: 280px;
+  height: 45px;
+  margin: 107px 0px 50px 15px;
 }
 
-.section {
-  border: 1px solid black;
+.button2 {
+  font-size: 16px;
   background-color: #048eaa;
-  color: white;
-  text-align: center;
+  width: 280px;
+  height: 45px;
+  margin: 60px 0px 0px 0px;
+}
+
+.button3 {
+  font-size: 16px;
+  background-color: #048eaa;
+  width: 297px;
+  height: 45px;
+  margin: 83px 0px 50px 15px;
+}
+
+#lastParagraph {
+  margin: 0px 0px 20px 0px;
+  word-spacing: 20px;
+}
+
+.media {
+  margin-left: 10px;
+  margin-right: 10px;
 }
