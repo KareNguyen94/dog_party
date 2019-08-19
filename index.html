@@ -1,57 +1,61 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
+  <header>
     <title>Some Dogs Information</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script scr="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-  </head>
+  </header>
   <body>
-    <section class="header">
-      <img src="images/dog-icon.svg" alt="Some dogs logo" id="logo" />
+  <nav>
+    <img src="images/dog-icon.svg" alt="Some dogs logo" id="logo"/>
       <div class="links">
         <a href="">How To Dog</a>
         <a href="">What Is Dogs</a>
         <a href="">Facts From Dog</a>
       </div>
-    </section>
-    <div class="background">
-      <h1>A Site About <span id="somedogs">Some Dogs</span></h1>
-        <img src="images/dog1-sq.jpg" alt="Red nose putbill with blue bandana" class="center" />
-    <form action="http://www.somedogs.com/dogname.php">
-    <div class="name">
-      <p>Name</p>
+  </nav>
+  <main>
+    <h1>A Site About <span id="somedogs">Some Dogs</span></h1>
+      <img src="images/dog1-sq.jpg" alt="Red nose putbill with blue bandana" class="rednose"/>
+      <form action="">
+      <p class="name">Name</p>
+    <form>
+      <input id="formBox" type="text"><br>
+      <button id="nameButton" class="button" type="button">Name This Dog</button><br>
+    <div>
+      <input id="paragraphBox" type="textarea"><br>
+      <input id="radioHow" type="radio" name="editParagraph" value="howToDog" class="radioButton"> How To Dog
+      <input id="radioWhat" type="radio" name="editParagraph" value="whatIsDogs" class="radioButton"> What Is Dogs
+      <input id="radioFacts" type="radio" name="editParagraph" value="factsFromDog" class="radioButton"> Facts From Dog<br>
     </div>
-    <div class="formbox">
-        <input type="text" name="username" style="font-size:23px;">
-    </div>
-        <input class="button" type="submit" name="submit" value="Name This Dog" />
     </form>
-    </div>
     <div class="column1of3">
       <h2>How To Dog</h2>
-        <img class="img1" src="images/dog2-sq.jpg" alt="Gray pitbill" class="" />
-      <p class="p1">Dat tungg tho pupperino length body. borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf, hecking good boys doggo doge. The neighborhood pupper borkf smol corgo ong water shoob stop it fren, boofers pupper heck ruff.</p>
-        <input class="button1" type="submit" name="submit" value="How" />
+      <img class="img1" src="images/dog2-sq.jpg" alt="Gray pitbill"/>
+      <p id="howToDog" class="paragraphText">Dat tungg tho pupperino length body. borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf, hecking good boys doggo doge. The neighborhood pupper borkf smol corgo ong water shoob stop it fren, boofers pupper heck ruff.</p>
+      <button id="howButton" class="button1">How</button>
     </div>
     <div class="column2of3">
       <h2>What Is Dogs</h2>
-        <img class="img2" src="images/dog3-sq.jpg" alt="Black austrailian shepperd" class="" />
-      <p class="p2">Long doggo smol borking doggo with a long snoot for pats pupperino h*ck heckin angery woofer shoober aqua doggo heck, doggo auqa doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that feed shibe. Extremely cuuuuuuute corgo waggy wags stop it fren</p>
-        <input class="button2" type="submit" name="submit" value="What" />
+      <img class="img2" src="images/dog3-sq.jpg" alt="Black austrailian shepperd"/>
+      <p id="whatIsDog" class="paragraphText">Long doggo smol borking doggo with a long snoot for pats pupperino h*ck heckin angery woofer shoober aqua doggo heck, doggo auqa doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that feed shibe. Extremely cuuuuuuute corgo waggy wags stop it fren</p>
+      <button id="whatButton" class="button2" type="submit">What</button>
     </div>
     <div class="column3of3">
       <h2>Facts From Dog</h2>
-        <img class="img3" src="images/dog4-sq.jpg" alt="Black mix dog with red bandana" class="" />
-      <p class="p3">Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck, stop it fren ur givin me a spook. Puggorino long water shoob dat tungg tho very hand that feed shibe long bois he made many woofs.</p>
-        <input class="button3" type="submit" name="submit" value="Facts" />
+      <img class="img3" src="images/dog4-sq.jpg" alt="Black mix dog with red bandana"/>
+      <p id="factsFromDogs" class="paragraphText">Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck, stop it fren ur givin me a spook. Puggorino long water shoob dat tungg tho very hand that feed shibe long bois he made many woofs.</p>
+      <button id="factsButton" class="button3" type="submit">Facts</button>
     </div>
-    <div class="section">
-      <p>Learn About Dogs Online</p>
-        <img src="images/twitter.svg" alt="Twitter logo">
-        <img src="images/instagram.svg" alt="Instagram logo">
-        <img src="images/facebook.svg" alt="Facebook logo">
-        <img src="images/linkedin.svg" alt="Linkedin logo">
-    </div>
+  </main>
+   <footer>
+     <p id="lastParagraph">Learn About Dogs Online</p>
+     <img class="media" src="images/twitter.svg" alt="Twitter logo">
+     <img class="media" src="images/instagram.svg" alt="Instagram logo">
+     <img class="media" src="images/facebook.svg" alt="Facebook logo">
+     <img class="media" src="images/linkedin.svg" alt="Linkedin logo">
+   </footer>
+     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
